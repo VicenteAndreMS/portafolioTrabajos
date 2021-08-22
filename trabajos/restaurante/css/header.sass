@@ -1,0 +1,58 @@
+$blanco: #fff
+$smartphone: 480px
+$tablets: 728px
+$desktop: 1024px
+    
+header
+    width: 100%
+    background: url('../img/bg.jpg') #281a0c
+    background-size: cover
+    background-attachment: fixed 
+    background-position: center 0
+    .contenedor
+        position: relative
+        height: 700px
+        @media screen and(max-width: $tablets)
+            height: 400px
+        .menu
+            width: 100%
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: flex-end
+            @media screen and(max-width:800px)
+                justify-content: center
+            a
+                display: inline-block
+                text-decoration: none
+                color: $blanco
+                font-size: 20px
+                font-weight: 300
+                margin: 40px 20px
+                position: relative
+                padding: 5px
+                &:hover
+                    text-decoration: underline
+        .textos
+            width: 100%
+            color: $blanco
+            position: absolute
+            top: 50%
+            margin-top: -70px
+            @media screen and(max-width: $tablets)
+                margin-top: -45px
+            .nombre
+                font-family: 'Open Sans'
+                font-size: 50px
+                @media screen and(max-width: $tablets)
+                    font-size: 35px
+            span
+                font-weight: 300
+            h3
+                margin-top: 20px
+                font-weight: 300
+                font-size: 30px
+                font-style: italic
+                @media screen and(max-width: $tablets)
+                    font-size: 20px
+        

@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -mz-webkit-box-sizing: border-box;
+}
+body{
+    background: rgb(70, 70, 70);
+}
+.contenedor{
+    width: 70%;
+    margin: auto;
+}
+header{
+    width: 100%;
+    background: white;
+}
+.menu-lista{
+    display: inline-block;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+section{
+    width: 70%;
+    background: white;
+    float: left;
+}
+section article .imagen{
+    width: 100%;
+}
+section article .imagen img{
+    width: 100%;
+}
+section article .contenido{
+    padding: 30px;
+}
+aside{
+    width: 30%;
+    float: left;
+    background: rgb(18, 17, 24);
+}
+
+aside .lateral,
+aside .lateral2{
+    padding: 30px;
+}
+aside .lateral h3,
+aside .lateral2 h3{
+    color: rgb(255, 174, 0);
+    border-bottom: 1px solid rgb(255, 174, 0);
+    padding: 3px;
+}
+aside .lateral-contenido a{
+    text-decoration: none;
+    color: white;
+}
+aside .lateral-contenido p{
+    border-bottom: 1px solid white;
+}
+aside .lateral-contenidoInferior p{
+    color: white;
+}
+footer{
+    width: 70%;
+    float: left;
+    background: rgb(18, 17, 24);
+    padding: 15px;
+    color: white;
+}
+
+/*HOVER*/
+header .menu a:hover{
+    transition: 0.3s;
+    background: rgb(255, 145, 0);
+    color: white;
+}
+aside .lateral-contenido a:hover{
+    color:#ccc;
+}
+
+/*Medida*/
+@media (max-width:1000px){
+    .contenedor{
+        width: 90%;
+    }
+    section{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    aside .lateral,
+    aside .lateral2{
+        width: 49%;
+        float:left;
+    }
+    aside .lateral2{
+        border-left: 1px solid white;
+    }
+    .contenedor .menu a:active{
+        background: rgb(255, 145, 0);
+        color: white;
+    }
+   
+    footer{
+        width: 100%;
+        background: white;
+        color: black;
+    }
+}

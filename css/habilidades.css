@@ -1,0 +1,169 @@
+.habilidades{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../imagenes/HabilidadesFondo.jpg');
+    margin: auto;
+}
+.titulo-habilidades{
+    text-align: center;
+    width: 100%;
+    font-family: 'OpenSans-SemiBoldItalic';
+    color: #464545;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.titulo-habilidades h3{
+    margin: auto;
+    width: 23%;
+    background: rgba(204, 204, 204, 0.479);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    padding: 40px;
+}
+.imagenes-habilidades{
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#uno{
+    animation-name: habilidadesAnimadasUno;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#dos{
+    animation-name: habilidadesAnimadasDos;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#tres{
+    animation-name: habilidadesAnimadasUno;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#cuatro{
+    animation-name: habilidadesAnimadasDos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#cinco{
+    animation-name: habilidadesAnimadasUno;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#seis{
+    animation-name: habilidadesAnimadasDos;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.habilidad{
+    width: 15%;
+    opacity: .7;
+    transform: scale(1.00);
+    transition: 1s;
+}
+.habilidad img{
+    width: 100%;
+}
+
+/*Hover*/
+.habilidad:hover{
+    width: 16%;
+    transform: scale(1.1);
+    opacity:1;
+    transition: .5s;
+}
+/*Animación Habilidades*/
+@keyframes habilidadesAnimadasUno{
+    0%{
+        transform: translate(0px,-20px);
+    }
+    50%{
+        transform: translate(0px,20px);
+    }
+    100%{
+        transform: translate(0px,-20px);
+    }
+}
+@keyframes habilidadesAnimadasDos{
+    0%{
+        transform: translate(0px,20px);
+    }
+    50%{
+        transform: translate(0px,-20px);
+    }
+    100%{
+        transform: translate(0px,20px);
+    }
+}
+@keyframes habilidadesAnimadasTres{
+    0%{
+        transform: translate(0px,20px);
+    }
+    50%{
+        transform: translate(0px,-20px);
+    }
+    100%{
+        transform: translate(0px,20px);
+    }
+}
+/*Habilidades Media Query*/
+@media screen and (max-width: 800px){
+    .habilidades{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .imagenes-habilidades{
+        width: 100%;
+    }
+    .habilidad{
+        opacity: 1;
+        width: 16%;
+        transform: scale(0.4);
+    }
+    #uno{
+        animation-name: habilidadesAnimadasUno;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    #dos{
+        animation-name: habilidadesAnimadasDos;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    #tres{
+        animation-name: habilidadesAnimadasUno;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    #cuatro{
+        animation-name: habilidadesAnimadasDos;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    #cinco{
+        animation-name: habilidadesAnimadasUno;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    #seis{
+        animation-name: habilidadesAnimadasDos;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    .habilidad:hover{
+        width: 16%;
+        opacity:1;
+        transition: .5s;
+    }
+}
