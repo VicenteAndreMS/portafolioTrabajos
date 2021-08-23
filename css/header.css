@@ -292,7 +292,7 @@ header .navbar-nombre{
         width: 95%;
         z-index: 1;
         transition: top 0.2s;
-        top: 4.4%;
+        top: 5%;
         left: 1.5%;
     }
     .presentacion{
