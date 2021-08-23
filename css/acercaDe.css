@@ -39,7 +39,7 @@
 .acercaDeModoOscuro{
     transition: 1s;
     cursor: pointer;
-    background-image: url('../imagenes/AcercaDeFondoOscuro.jpg');
+    background: black;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -106,7 +106,7 @@
     .acercaDeModoOscuro{
         transition: .8s;
         cursor: pointer;
-        background-image: url('../imagenes/AcercaDeFondoOscuro.jpg');
+        background: black;
         width: 100%;
         display: flex;
         flex-direction: column;
