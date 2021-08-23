@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    background-image: url('../imagenes/HabilidadesFondo.jpg');
+    background: #fff;
     margin: auto;
 }
 .titulo-habilidades{
