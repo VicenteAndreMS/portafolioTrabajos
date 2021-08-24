@@ -1,0 +1,227 @@
+.contacto{
+    width: 100%;
+    background-image: url('../imagenes/ContactoFondo.jpg');
+    overflow: hidden;
+    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto .titulo-contacto{
+    width: 100%;
+    font-family: 'OpenSans-SemiBoldItalic';
+    color: #5E5E5E; 
+    font-size: 30px;
+}
+.contacto .titulo-contacto h3{
+    text-align: center;
+    padding: 20px;
+}
+.formulario{
+    width: 80%;
+}
+.informacion-contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.label{
+    cursor:pointer;
+    width: 100%;
+    font-family: 'OpenSans-Regular';
+    color:#5E5E5E;
+}
+.nombre-contacto{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nombre-contacto input[type=text]{
+    width: 60%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #5E5E5E;
+    font-family: 'OpenSans-Regular';
+    font-size: 15px;
+    color:#2b2b2b;
+    padding: 5px;
+}
+.correo-contacto{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.correo-contacto input[type=email]{
+    width: 60%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #5E5E5E;
+    font-family: 'OpenSans-Regular';
+    font-size: 15px;
+    color:#2b2b2b;
+    padding: 5px;
+}
+.mensaje-contacto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.mensaje-contacto textarea{
+    border-radius: 4px;
+    border: 2px solid #404040;
+    width: 100%;
+    background: none;
+    max-width: 100%;
+    min-width: 100%;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    font-family: 'OpenSans-Regular';
+    font-size: 15px;
+    color:#2b2b2b;
+    padding: 10px;
+}
+.contacto .boton{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contacto button{
+    border-radius: 3px;
+    transition: .5s;
+    cursor:pointer;
+    border: 0px solid #fff;
+    font-size: 15px;
+    background: #434242;
+    color: white;
+    padding: 15px;
+    font-family: 'OpenSans-SemiBold';
+    width: 15%;
+}
+/*Focus*/
+.nombre-contacto input[type=text]:focus{
+    width: 80%;    
+    transition: 1s;
+    border-bottom: 2px solid #5E5E5E;
+    font-family: 'OpenSans-Regular';
+    font-size: 15px;
+    color:#2b2b2b;
+    border: none;
+}
+
+.correo-contacto input[type=email]:focus{
+    width: 80%;    
+    transition: 1s;
+    border-bottom: 2px solid #5E5E5E;
+    font-family: 'OpenSans-Regular';
+    font-size: 15px;
+    color:#2b2b2b;
+    border:none;
+}
+.mensaje-contacto textarea:focus{
+    padding: 10px;
+    width: 60%;    
+    transition: 1s;
+    border-bottom: 2px solid #5E5E5E;
+    font-family: 'OpenSans-Regular';
+    font-size: 15px;
+    color:#2b2b2b;
+}
+
+/*Hover*/
+.contacto .boton button:hover{
+    background: #2b2b2b;   
+    border-radius: 10px;
+    width: 13%;
+    transition: .5s;
+}
+
+/*Contacto Media Query*/
+@media screen and (max-width: 800px){
+    .contacto{
+        width: 100%;
+    }
+    .contacto .titulo-contacto{
+        font-size: 20px;
+    }
+    .formulario{
+        font-size: 15px;
+    }
+    .contacto input[type=text]{
+        font-size: 12px;
+        width: 90%;
+    }
+    .contacto input[type=text]:focus{
+        width: 100%;
+        font-size: 12px;
+    }
+    .contacto input[type=email]{
+        font-size: 12px;
+        width: 90%;
+    }
+    .contacto input[type=email]:focus{
+        width: 100%;
+        font-size: 12px;
+    }
+    .contacto .mensaje-contacto{
+        font-size: 15px;
+        width: 100%;
+    }
+    .contacto .mensaje-contacto textarea{
+        width: 100%;
+        font-size: 12px;
+    }
+    .contacto .mensaje-contacto textarea:focus{
+        width: 100%;
+        font-size: 12px;
+        outline: none;
+    }
+    .contacto .boton{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+    .contacto .boton .enviar{
+        width: 45%;
+        font-size: 12px;
+        border-radius: 6px;
+        font-family: 'OpenSans-SemiBold';
+    }
+    .contacto .boton .enviar:hover{
+        width: 40%;
+        font-size: 13px;
+    }
+    .contacto .boton .enviar:focus{
+        width: 40%;
+        font-size: 13px;
+        border-radius: 10px;
+        background: #404040;
+    }
+    .contacto .boton button:hover{
+        background: #404040;   
+        border-radius: 5px;
+        width: 13%;
+        transition: .0s;
+    }
+    .contacto .boton button:active{
+        background: #1a1a1a;   
+        border-radius: 5px;
+        width: 13%;
+        transition: .0s;
+    }
+}
