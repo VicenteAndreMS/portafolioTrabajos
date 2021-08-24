@@ -15,8 +15,8 @@
     border: none;
     cursor: pointer;
 }
-.boton-acercaDe:active{
-    border: none;
+.boton-acercaDe:focus{
+    outline: none;
 }
 .acercaDe .titulo-acercaDe{
     text-align: center;
