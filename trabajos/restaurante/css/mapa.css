@@ -1,0 +1,71 @@
+header {
+  width: 100%;
+  background: url("../img/bg.jpg") #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0; }
+  header .contenedor {
+    position: relative;
+    height: 700px; }
+    @media screen and (max-width: 728px) {
+      header .contenedor {
+        height: 400px; } }
+    header .contenedor .menu {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end; }
+      @media screen and (max-width: 800px) {
+        header .contenedor .menu {
+          justify-content: center; } }
+      header .contenedor .menu a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 40px 20px;
+        position: relative;
+        padding: 5px; }
+        header .contenedor .menu a:hover {
+          text-decoration: underline; }
+    header .contenedor .textos {
+      width: 100%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -70px; }
+      @media screen and (max-width: 728px) {
+        header .contenedor .textos {
+          margin-top: -45px; } }
+      header .contenedor .textos .nombre {
+        font-family: "Open Sans";
+        font-size: 50px; }
+        @media screen and (max-width: 728px) {
+          header .contenedor .textos .nombre {
+            font-size: 35px; } }
+      header .contenedor .textos span {
+        font-weight: 300; }
+      header .contenedor .textos h3 {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 30px;
+        font-style: italic; }
+        @media screen and (max-width: 728px) {
+          header .contenedor .textos h3 {
+            font-size: 20px; } }
+
+.mapa {
+  width: 100%;
+  text-align: center;
+  background: #ccc; }
+  .mapa iframe {
+    margin: auto;
+    vertical-align: top;
+    width: 90%; }
+    @media screen and (max-width: 728px) {
+      .mapa iframe {
+        height: 400px; } }
+
+/*# sourceMappingURL=mapa.css.map */
